@@ -27,7 +27,7 @@
       <header>
           <!-- top-bar --> 
           <nav>
-              <div class="logoMe"> <img src="images/logo.png" alt="Logo"></div>
+              <div class="logoMe"><a href="index.html"><img src="images/logo.png"/></a></div>
               <ul class="nav-links">
                   <li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
                   <li><a class="smoothscroll"  href="#about" title="">About</a></li>
@@ -56,59 +56,9 @@
                  <div class="col-twelve">
                   <h5>Hello,</h5>
 				   <h1>I am Divyesh Vala</h1>
-				   <h2 style="font-size: 50px; color: white">I am <span class="txt-rotate" data-period="2000" data-rotate='[ " Creative.", " a Designer.", " a Developer.", " an Engineer."]'></span></h2>
+				   <h2 class="text-rotate">I am <span class="txt-rotate" data-period="2000" data-rotate='[ " Creative.", " a Designer.", " a Developer.", " an Engineer."]'></span></h2>
                    
-                   <script>
-					   var TxtRotate = function(el, toRotate, period) {
-						   this.toRotate = toRotate;
-						   this.el = el;
-						   this.loopNum = 0;
-						   this.period = parseInt(period, 10) || 2000;
-						   this.txt = '';
-						   this.tick();
-						   this.isDeleting = false;
-					   };
-					   TxtRotate.prototype.tick = function() {
-						   var i = this.loopNum % this.toRotate.length;
-						   var fullTxt = this.toRotate[i];
-						   if (this.isDeleting) {
-							   this.txt = fullTxt.substring(0, this.txt.length - 1);
-						   } else {
-							   this.txt = fullTxt.substring(0, this.txt.length + 1);
-						   }
-						   this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-						   var that = this;
-						   var delta = 300 - Math.random() * 100;
-						   if (this.isDeleting) { delta /= 2; }
-						   if (!this.isDeleting && this.txt === fullTxt) {
-							   this.isDeleting = true;
-						   } else if (this.isDeleting && this.txt === '') {
-							   this.isDeleting = false;
-							   this.loopNum++;
-							   delta = 500;
-						   }
-						   setTimeout(function() {
-							   that.tick();
-						   }, delta);
-					   };
-					   
-					   window.onload = function() {
-						   var elements = document.getElementsByClassName('txt-rotate');
-						   for (var i=0; i<elements.length; i++) {
-							   var toRotate = elements[i].getAttribute('data-rotate');
-							   var period = elements[i].getAttribute('data-period');
-							   if (toRotate) {
-								   new TxtRotate(elements[i], JSON.parse(toRotate), period);
-							   }
-						   }
-						   
-						   // INJECT CSS
-						   var css = document.createElement("style");
-						   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-						   document.body.appendChild(css);
-					   };
-				   
-				   </script>		   
+                  <script type="text/javascript" src="js/typewriter.js"></script>		   
 					   
 					<p class="intro-position">
                      <span>Software Developer</span>
@@ -131,7 +81,7 @@
                <h1>Let me introduce myself.</h1>
                <div class="intro-info">
                   <img src="images/profile-pic.png" alt="Profile Picture">
-                  <p class="lead">I am a London based Freelance software developer. I build and create systems that makes people's lives easier. My main interest is Usability Engineering, which involves the study of psychological behaviour of human mind when using an user interface. Through out my studies I have learnt human-computer interaction and specifically with devising human-computer interfaces that have high usability or user friendliness.</p>
+                  <p class="lead">I am a London based software developer. I build and create systems that makes people's lives easier. My main interest is Usability Engineering, which involves the study of psychological behaviour of human mind when using an user interface. Through out my studies I have learnt human-computer interaction and specifically with devising human-computer interfaces that have high usability or user friendliness.</p>
                </div>
             </div>
          </div>
@@ -147,16 +97,12 @@
                   <span style="color: white;">Divyesh Vala</span>
                </li>
                <li>
-                  <strong style="color: white;">Birth Date:</strong>
-                  <span style="color: white;">26 December, 1998</span>
-               </li>
-               <li>
                   <strong style="color: white;">Website:</strong>
-                  <span style="color: white;">www.iamdivyesh.com</span>
+                  <span style="color: white;">www.iamdivyesh.tech</span>
                </li>
                <li>
                   <strong style="color: white;">Email:</strong>
-                  <span style="color: white;">me@iamdivyesh.com</span>
+                  <span style="color: white;">divyesh.vala26@gmail.com</span>
                </li>
             </ul>
             <!-- /info-list -->
@@ -293,7 +239,7 @@
                      </div>
                      <div class="description-box">
                         <h4>GameMaker</h4>
-                        <p>I have also experienced using GameMaker which allows developing simple 2D games engines. This gave me advanced knowledge of graphics design/rendering process of game characters and game sprites. Using GML I programmed a simple tapping 2D game with variety of different levels and complexity of play.</p>
+                        <p>I have also experienced using GameMaker, which allows developing simple 2D games engines. This gave me advanced knowledge of graphics design/rendering process of game characters and game sprites. Using GML I programmed a simple tapping 2D game with variety of different levels and complexity of play.</p>
                         <div class="categories">Games Design</div>
                      </div>
                      <div class="link-box">

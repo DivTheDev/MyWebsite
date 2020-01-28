@@ -47,6 +47,10 @@
      outline: 0;
 }
 /** * 03. typography & general theme styles - (_document-setup.scss) */
+.text-rotate{
+    font-size: 50px; 
+    color: white;
+}
  h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
      font-family: 'Open Sans', sans-serif;
      color: #313131;
@@ -1031,9 +1035,8 @@ nav{
 
 .logoMe{
     
-    height: 100px;
-    width: 300px;
-    padding-top: 0.8em;
+    width: 60px;
+    padding: 0px;
 }
 .nav-links{
     display: flex;
