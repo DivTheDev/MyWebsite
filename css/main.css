@@ -1632,8 +1632,8 @@ nav {
 
 .intro-content .button::after {
 	display: inline-block;
+	font-family: FontAwesome;
 	content: "\f107";
-	font-family: fontAwesome;
 	font-size: 1.6rem;
 	line-height: inherit;
 	text-align: center;
