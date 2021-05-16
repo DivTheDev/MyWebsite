@@ -1,445 +1,462 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<head>
-    <!--- basic page needs-->
+  <head>
+    <!--- basic page needs
+      ================================================== -->
     <meta charset="utf-8">
     <title>Divyesh Vala</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <!-- mobile specific metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- CSS -->
+    <!-- mobile specific metas
+      ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS
+      ================================================== -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/vendor.css">
-    <!-- script-->
+    <link rel="stylesheet" href="dark-mode.css">
+    <!-- Libraries 
+      ===================================================== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <!-- script
+      ================================================== -->
     <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-    <!-- favicons -->
-    <link rel="icon" type="ai/png" href="images/logo.png">
-    <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-157151840-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-157151840-1');
-    </script>
-</head>
-
-<body id="top">
-    <!-- header -->
-    <header>
-        <!-- top-bar -->
-        <nav>
-            <div class="logoMe">
-                <a href="index.html"><img src="images/logo.png" /></a>
-            </div>
-            <ul class="nav-links">
-                <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
-                <li><a class="smoothscroll" href="#about" title="">About</a></li>
-                <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-                <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+    <!-- favicons
+      ================================================== -->
+    <link rel="icon" type="image/svg+xml" href="images/DV_logo_favicon.svg">
+  </head>
+  <body id="top">
+    <!-- preloader
+      ================================================== -->
+    <div id="preloader">
+      <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- header
+      ================================================== -->
+    <header class="s-header">
+      <div class="header-logo">
+        <a href="index.html">
+        <img src="images/logo.png" alt="Homepage">
+        </a>
+      </div>
+      <div class="header-content">
+        <nav class="row header-nav-wrap">
+          <ul class="header-nav">
+            <li><a class="smoothscroll" href="#hero" title="Intro">Home</a></li>
+            <li><a class="smoothscroll" href="#about" title="About">About</a></li>
+            <li><a class="smoothscroll" href="#services" title="Services">Services</a></li>
+            <li><a class="smoothscroll" href="#portfolio" title="Works">Works</a></li>
+            <li><a href="mailto:hello@divyesh.com" title="Contact us">Say Hello</a></li>
+          </ul>
         </nav>
-        <script src="js/burger.js"></script>
-        <!-- /top-bar -->
+        <!-- end header-nav-wrap -->
+      </div>
+      <!-- end header-content -->
+      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
     </header>
-    <!-- /header -->
-    <!-- intro section -->
-    <section id="intro">
-        <div class="intro-content">
-            <div id="particles-js"></div>
-            <div class="row">
-                <div class="col-twelve">
-                    <h1 class="text-rotate"><span class="txt-rotate" data-period="2000" data-rotate='[ "Hi, I am Divyesh Vala"," I am Creative.", " I am a Designer.", " I am a Developer.", " I am an Engineer."]'></span></h1>
-                    <script type="text/javascript" src="js/typewriter.js"></script>
-                    <p class="intro-position">
-                        <span>Software Developer</span>
-                        <span>UI/UX Designer</span>
-                    </p>
-                    <a class="button stroke smoothscroll" href="#about" title="">More</a>
-                </div>
-            </div>
-        </div>
+    <!-- hero
+      ================================================== -->
+    <section id="hero" class="s-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg-3000.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+      <div class="row hero-content">
+        <div id="particles-js"></div>
         <script type="text/javascript" src="js/particles.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
-        <!-- /intro-content -->
+        <div class="column large-full">
+          <div class="col-twelve">
+            <h1 class="text-rotate"><span class="txt-rotate" data-period="2000" data-rotate='[ "Hi, I am Divyesh Vala"," I am Creative.", " I am a Designer.", " I am a Developer.", " I am an Engineer."]'></span></h1>
+            <script type="text/javascript" src="js/typewriter.js"></script>
+            <a class="button stroke smoothscroll more" href="#about" title="">More</a>
+          </div>
+          <ul class="hero-social">
+            <li>
+              <a href="https://www.linkedin.com/in/divyeshvala" target="_blank">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://github.com/DivTheDev" target="_blank">Github</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/divthedev" target="_blank">Twitter</a>
+            </li>
+          </ul>
+          <!-- end hero-social -->
+        </div>
+      </div>
+      <!-- end hero-content -->
+      <div class="hero-scroll">
+        <a href="#about" class="scroll-link smoothscroll">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12 24l-8-9h6v-15h4v15h6z"/>
+          </svg>
+        </a>
+      </div>
+      <!-- end hero-scroll -->
     </section>
-    <!-- /intro -->
-    <!-- about section -->
-    <section id="about">
-        <div class="row section-intro">
-            <div class="col-twelve">
-                <h5>About</h5>
-                <h1>Let me introduce myself.</h1>
-                <div class="intro-info">
-                    <img src="images/profile-pic.png" alt="Profile Picture">
-                    <p class="lead">A proactive Software Developer and graduate from Brunel University with main interest in front-end and web development technologies. Knowledge of working with various life cycles of software development, including design, implementation,
-                        debugging, testing, and maintenance. <br> <br> Experienced in developing for web including JavaScript, jQuery, HTML5, CCS3, ReactJS, AngularJS and Bootstrap. As well as back-end involving PHP, Java and node.Js. </p>
-                </div>
-            </div>
-        </div>
-        <!-- /section-intro -->
-    </section>
-    <div class="row about-content">
-        <div class="col-six tab-full">
-            <h3 class="sub-title-text">Profile</h3>
-            <p class="about-text">Graduate from Brunel University London in BSc Computer Science.</p>
-            <ul class="info-list">
-                <li>
-                    <strong style="color: white;">Fullname:</strong>
-                    <span style="color: white;">Divyesh Vala</span>
-                </li>
-                <li>
-                    <strong style="color: white;">Website:</strong>
-                    <span style="color: white;">www.divyeshvala.com</span>
-                </li>
-                <li>
-                    <strong style="color: white;">Email:</strong>
-                    <span style="color: white;">hello@divyeshvala.com</span>
-                </li>
-            </ul>
-            <!-- /info-list -->
-        </div>
-        <div class="col-six tab-full">
-            <h3 class="sub-title-text">Skills</h3>
-            <p style="color: white;">Having Software Developing experience of past 5 years through work place and education, I have developed variety of skills.</p>
-            <ul class="skill-bars">
-                <li>
-                    <div class="progress percent80"><span>85%</span></div>
-                    <strong style="color: white;">HTML5</strong>
-                </li>
-                <li>
-                    <div class="progress percent75"><span>75%</span></div>
-                    <strong style="color: white;">CSS3</strong>
-                </li>
-                <li>
-                    <div class="progress percent60"><span>60%</span></div>
-                    <strong style="color: white;">Java</strong>
-                </li>
-                <li>
-                    <div class="progress percent60"><span>60%</span></div>
-                    <strong style="color: white;">PHP</strong>
-                </li>
-                <li>
-                    <div class="progress percent60"><span>40%</span></div>
-                    <strong style="color: white;">SQL</strong>
-                </li>
-                <li>
-                    <div class="progress percent95"><span>95%</span></div>
-                    <strong style="color: white;">Adobe Photoshop</strong>
-                </li>
-                <li>
-                    <div class="progress percent95"><span>95%</span></div>
-                    <strong style="color: white;">Adobe Dreamweaver</strong>
-                </li>
-            </ul>
-            <!-- /skill-bars -->
-        </div>
-    </div>
-    <div class="row button-section">
-        <div class="col-twelve">
-            <a href="#" title="Download CV" class="button button-primary">Download CV</a>
-        </div>
-    </div>
-    <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="row section-intro">
-            <div class="col-twelve">
-                <h5>Portfolio</h5>
-                <h1>My Projects.</h1>
-            </div>
-        </div>
-        <!-- /section-intro-->
-        <div class="row portfolio-content">
-            <div class="col-twelve">
-                <!-- portfolio-wrapper -->
-                <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/bfit.png" alt="Bfit">
-                            <a href="#modal-01" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">BFit</h3>
-                                        <span class="folio-types">
-                      High quality fitness tracker
-                    </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/game.png" alt="game">
-                            <a href="#modal-02" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Captain America 2D Game Design</h3>
-                                        <span class="folio-types">
-                      GameMaker 2D Game Design
-                    </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/uxbridge.png" alt="uxbridge">
-                            <a href="#modal-03" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Uxbridge App</h3>
-                                        <span class="folio-types">
-                      Uxbridge College App
-                    </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/jarvis.PNG" alt="Jarvis">
-                            <a href="#modal-04" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">J.A.R.V.I.S 2.0</h3>
-                                        <span class="folio-types">
-                      AI/Voice assisstant
-                    </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-                    <!-- modal popups - begin -->
-                    <div id="modal-01" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-bfit.png" alt="" />
-                        </div>
-                        <div class="description-box">
-                            <h4>BFit</h4>
-                            <p>This is my current project which I am working on as a front end. This android application works as a personal fitness tracker, but gives you a customised gym workout plan as well as a chosen diet on your specific timings. User
-                                would create an account adding all health information and app works out reports and reminds you for your workout. Users are also able to track progress.</p>
-                            <div class="categories">Android Development</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-                    </div>
-                    <!-- /modal-01 -->
-                    <div id="modal-02" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-game.png" alt="" />
-                        </div>
-                        <div class="description-box">
-                            <h4>GameMaker</h4>
-                            <p>I have also experienced using GameMaker, which allows developing simple 2D games engines. This gave me advanced knowledge of graphics design/rendering process of game characters and game sprites. Using GML I programmed a simple
-                                tapping 2D game with variety of different levels and complexity of play.</p>
-                            <div class="categories">Games Design</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-                    </div>
-                    <!-- /modal-02 -->
-                    <div id="modal-03" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-uxbridge.png" alt="Uxbridge App" />
-                        </div>
-                        <div class="description-box">
-                            <h4>Uxbridge App</h4>
-                            <p>This was an android application I developed in my 2nd Year of college. This involved basic programming and creating an app for the college itself.<br>It displays the contents of uxbridge college website in mobile format as
-                                well as accessing course pages and make enquiries. Going through process of waterfall method (SDLC), we were able to plan our phases in time with no stretching deadlines. <br>This gave us an insight to project management
-                                environment and abilities to work individually as well as a team.</p>
-                            <div class="categories">Android Development/Project Management</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-                    </div>
-                    <!-- /modal-03 -->
-                    <div id="modal-04" class="popup-modal slider mfp-hide">
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-jarvis.png" alt="JARVIS" />
-                        </div>
-                        <div class="description-box">
-                            <h4>J.A.R.V.I.S 2.0</h4>
-                            <p>This is my personal project which I enjoy doing at home. Artificial Intelligence is something that interests me as well. I have created a simple voice assisstant which responses to certain intents. I have also set events in
-                                Google DialogFLow for many words or sentences a user may say. For example "Tell me a joke" and system would reply with pre added jokes.</p>
-                            <div class="categories">AI/Voice Recognition</div>
-                        </div>
-                        <div class="link-box">
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-                    </div>
-                    <!-- /modal-04 -->
-                    <!-- modal popups - end -->
-                </div>
-                <!-- /portfolio-wrapper -->
-            </div>
-            <!-- /twelve -->
-        </div>
-        <!-- /portfolio-content -->
-    </section>
-    <!-- /portfolio -->
-    <!-- /stats Section -->
-    <section id="stats" class="count-up">
+    <!-- end s-hero -->
+    <!-- about
+      ================================================== -->
+    <section id="about" class="s-about target-section">
+      <div class="s-about__section s-about__section--profile">
+        <div class="right-vert-line"></div>
         <div class="row">
-            <div class="col-twelve">
-                <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-                    <div class="bgrid stat">
-                        <div class="icon-part">
-                            <i class="icon-pencil-ruler"></i>
-                        </div>
-                        <h3 class="stat-count">
-                            17
-                        </h3>
-                        <h5 class="stat-title">
-                            Projects Completed
-                        </h5>
-                    </div>
-                    <!-- /stat -->
-                    <div class="bgrid stat">
-                        <div class="icon-part">
-                            <i class="icon-light-bulb"></i>
-                        </div>
-                        <h3 class="stat-count">
-                            60
-                        </h3>
-                        <h5 class="stat-title">
-                            Ideas
-                        </h5>
-                    </div>
-                    <!-- /stat -->
-                    <div class="bgrid stat">
-                        <div class="icon-part">
-                            <i class="icon-cup"></i>
-                        </div>
-                        <h3 class="stat-count">
-                            545
-                        </h3>
-                        <h5 class="stat-title">
-                            Coffee Cups
-                        </h5>
-                    </div>
-                    <!-- /stat -->
-                    <div class="bgrid stat">
-                        <div class="icon-part">
-                            <i class="icon-book"></i>
-                        </div>
-                        <h3 class="stat-count">
-                            165
-                        </h3>
-                        <h5 class="stat-title">
-                            Books read
-                        </h5>
-                    </div>
-                    <!-- /stat -->
-                    <div class="bgrid stat">
-                        <div class="icon-part">
-                            <i class="icon-arrow-up"></i>
-                        </div>
-                        <h3 class="stat-count">
-                            5
-                        </h3>
-                        <h5 class="stat-title">
-                            Years spent in learning Computing
-                        </h5>
-                    </div>
-                    <!-- /stat -->
-                    <div class="bgrid stat">
-                        <div class="icon-part">
-                            <i class="icon-clock"></i>
-                        </div>
-                        <h3 class="stat-count">
-                            7200
-                        </h3>
-                        <h5 class="stat-title">
-                            Hours Spent on Projects
-                        </h5>
-                    </div>
-                </div>
+          <div class="column large-6 medium-8 tab-full">
+            <div class="section-intro" data-num="01" data-aos="fade-up">
+              <h3 class="subhead">About Me</h3>
+              <h1 class="display-1">Ready to accept challenges and always willing to learn</h1>
             </div>
+            <div class="profile-pic" data-aos="fade-up">
+              <img src="images/profile-pic.png" 
+                srcset="images/profile-pic.png 1x, images/profile-pic@2x.png 2x" alt="">
+            </div>
+            <h3 data-aos="fade-up">Profile</h3>
+            <p data-aos="fade-up">
+              A proactive Software Developer and graduate from Brunel University with main interest in front-end and web development technologies. Knowledge of working with various life cycles of software development, including design, implementation, debugging, testing, and maintenance. 
+            </p>
+            <p data-aos="fade-up">
+              Experienced in developing for web including JavaScript, jQuery, HTML5, CCS3, ReactJS, AngularJS and Bootstrap. As well as back-end involving PHP, Java and node.Js.
+            </p>
+          </div>
         </div>
+      </div>
+      <!-- end s-about__section--profile -->
+      <div class="s-about__section">
+        <div class="row">
+          <div class="column">
+            <h3 data-aos="fade-up">Skills</h3>
+          </div>
+        </div>
+        <div class="row block-large-1-2 block-900-full work-positions">
+          <div class="column" data-aos="fade-up">
+            <div class="position">
+              <div class="position__header">
+                <h6>
+                  <span class="position__co">Web Development</span>
+                </h6>
+              </div>
+              <p>
+                Experienced in developing for web using various different languages such as HTML, CSS, JavaScript, ReactJS and AngularJS. Have also worked with Frontend and Backend 
+                frameworks as well as CMS. Developed websites for clients under Coval Solutions Ltd. 
+              </p>
+            </div>
+          </div>
+          <!-- end column -->
+          <div class="column" data-aos="fade-up">
+            <div class="position">
+              <div class="position__header">
+                <h6>
+                  <span class="position__co">Data Science</span>
+                </h6>
+              </div>
+              <p>
+                Being a Data Science student, I have worked with numerous large scale data sets to manipulate, anaylse and solve real world problems. Experienced in using R, Python and Hadoop 
+                to support the learning. 
+              </p>
+            </div>
+          </div>
+          <!-- end column -->
+          <div class="column" data-aos="fade-up">
+            <div class="position">
+              <div class="position__header">
+                <h6>
+                  <span class="position__co">Mobile Development</span>
+                </h6>
+              </div>
+              <p>
+                Developed native mobile applications for Android and cross-platform with React Native.  
+              </p>
+            </div>
+          </div>
+          <!-- end column -->
+          <div class="column" data-aos="fade-up">
+            <div class="position">
+              <div class="position__header">
+                <h6>
+                  <span class="position__co">Design</span>
+                </h6>
+              </div>
+              <p>
+                I keep interest in learning UX/UI design. I use Adobe Suite (Photoshop, Illustrator and XD) to create
+                visual elements such as logos and interfaces for mobile and web on ocassional basis. 
+              </p>
+            </div>
+          </div>
+          <!-- end column -->
+        </div>
+      </div>
+      <!-- end s-about__section -->
     </section>
-    <!-- contact-->
-    <section id="contact">
-        <div class="row section-intro">
-            <div class="col-twelve">
-                <h5>Contact</h5>
-            </div>
+    <!-- end s-about -->
+    <!-- services
+      ================================================== -->
+    <section id="services" class="s-services target-section h-dark-bg">
+      <div class="row s-services__content">
+        <div class="vert-line"></div>
+        <div class="column large-6 s-services__leftcol">
+          <div class="section-intro" data-num="02" data-aos="fade-up">
+            <h3 class="subhead">Little bit more</h3>
+            <h1 class="display-1">
+              Technical skills
+            </h1>
+          </div>
+          <a href="https://github.com/DivTheDev" class="btn btn--medium h-full-width" data-aos="fade-up" target="_blank"><i class="fab fa-github"></i> Recent Projects</a>
         </div>
-        <!-- /section-intro -->
-        <div class="row contact-form">
-            <div class="col-twelve">
-                <!-- form -->
-                <form name="contactForm" id="contactForm" method="post" action="">
-                    <fieldset>
-                        <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-                        </div>
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-                        </div>
-                        <div class="form-field">
-                            <button class="submitform">Submit</button>
-                            <div id="submit-loader">
-                                <div class="text-loader">Sending...</div>
-                                <div class="s-loader">
-                                    <div class="bounce1"></div>
-                                    <div class="bounce2"></div>
-                                    <div class="bounce3"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-                <!-- Form End -->
-                <!-- contact-warning -->
-                <div id="message-warning">
-                </div>
-                <!-- contact-success -->
-                <div id="message-success">
-                    <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-                </div>
-            </div>
-            <!-- /col-twelve -->
+        <!-- end  s-services--leftcol -->
+        <div class="column large-6" data-aos="fade-up">
+          <div class="technologies text-center">
+            <ul>
+              <li><a class="f-color"><i class="fab fa-python fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-java fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-html5 fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-css3-alt fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-js fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-react fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-android fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-apple fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-windows fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-node-js fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-github fa-spin"></i></a></li>
+              <li><a class="f-color"><i class="fab fa-wordpress fa-spin"></i></a></li>
+            </ul>
+          </div>
         </div>
-        <!-- /contact-info -->
+      </div>
+      <!-- s-services__content -->
     </section>
-    <!-- /contact -->
-    <!-- footer -->
-    <!-- Java Script -->
-    <script src="js/jquery-2.1.3.min.js"></script>
+    <!-- end s-services -->
+    <!-- portfolio
+      ================================================== -->
+    <section id="portfolio" class="s-portfolio target-section">
+      <div class="row s-portfolio__header">
+        <div class="column large-6 medium-8 tab-full">
+          <div class="section-intro" data-num="03" data-aos="fade-up">
+            <h3 class="subhead">Portfolio</h3>
+            <h1 class="display-1">
+              A selection of recent projects I have worked on.
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- s-porfolio__header -->
+      <div class="row s-porfolio__list block-large-1-2 block-tab-full collapse">
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-medimate.jpg" title="Windows in The City" data-size="1050x700">
+              <img src="images/portfolio/medimate.jpg" 
+                srcset="images/portfolio/medimate.jpg 1x, images/portfolio/medimate@2x.jpg 2x" alt="">
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">ReactJS - Final Year Project (BSc)</div>
+              <h4 class="folio-item__title">MediMate</h4>
+            </div>
+            <a href="https://github.com/DivTheDev/Chatbot-for-medical-conditions" target="_blank" title="Project Link" class="folio-item__project-link">View Project</a>
+            <div class="folio-item__caption">
+              <p>Chatbot that conceptualises care given to critical patients that need close monitoring. Made using Aamazon Comprehend NLP and ReactJs.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-photography-web.jpg" title="Building Blocks" data-size="1050x700">
+              <img src="images/portfolio/photography-web.jpg" 
+                srcset="images/portfolio/photography-web.jpg 1x, images/portfolio/photography-web@2x.jpg 2x" alt="">
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">HTML, CSS, Js, PHP and MySQL</div>
+              <h4 class="folio-item__title">Photography Web</h4>
+            </div>
+            <a href="https://github.com/DivTheDev/photography-web-app" title="Project Link" class="folio-item__project-link">View Project</a>
+            <div class="folio-item__caption">
+              <p>Progressive web application (PHP and Js) that allows users to create account, upload photos with meta data and search users within series of SQL databases.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-bfit.jpg" Title="Shout and Jump" data-size="1050x700">
+              <img src="images/portfolio/bfit.jpg" 
+                srcset="images/portfolio/bfit.jpg 1x, images/portfolio/bfit@2x.jpg 2x" alt="">
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Flutter - (Coval Solutions Ltd)</div>
+              <h4 class="folio-item__title">BFit </h4>
+            </div>
+            <a href="https://github.com/coval-solutions/bfit-tracker-app" title="Project Link" class="folio-item__project-link">View Project</a>
+            <div class="folio-item__caption">
+              <p>BFit is your personalised health buddy, to maintain your physical well-being. You can use this cross-platform application to workout anywhere, even without any gym equipments.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-tableau.jpg" title="Sand Dunes" data-size="1050x700">
+              <img src="images/portfolio/tableau.jpg" 
+                srcset="images/portfolio/tableau.jpg 1x, images/portfolio/tableau@2x.jpg 2x" alt="">
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Tableau Dashboard</div>
+              <h4 class="folio-item__title">Life Expectancy - Coursework (MSc)</h4>
+            </div>
+            <a href="https://github.com/DivTheDev/life-expectancy-dashboard" title="Project Link" class="folio-item__project-link">View Project</a>
+            <div class="folio-item__caption">
+              <p>Interactive Tableau dashboard created to visualise and understand factors that affect life expectancy across world.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-captain-america-game.jpg" title="Sand Dunes" data-size="1050x700">
+              <img src="images/portfolio/captain-america-game.jpg" 
+                srcset="images/portfolio/captain-america-game.jpg 1x, images/portfolio/captain-america-game@2x.jpg 2x" alt="">
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">GameMaker</div>
+              <h4 class="folio-item__title">Catain America</h4>
+            </div>
+            <a href="https://github.com/DivTheDev/Captain-America-Game" title="Project Link" class="folio-item__project-link">View Project</a>
+            <div class="folio-item__caption">
+              <p>Desktop game created in GameMaker that includes scores, power ups and increased difficulty when levelling up.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end column -->
+        <div class="column" data-aos="fade-up">
+          <div class="folio-item">
+            <div class="folio-item__thumb">
+              <a class="folio-item__thumb-link" href="images/portfolio/gallery/g-coming-soon.jpg" title="The Lamp" data-size="1050x700">
+              <img src="images/portfolio/coming-soon.jpg" 
+                srcset="images/portfolio/coming-soon.jpg 1x, images/portfolio/coming-soon@2x.jpg 2x" alt="">
+              </a>
+            </div>
+            <div class="folio-item__info">
+              <div class="folio-item__cat">Product Design</div>
+              <h4 class="folio-item__title">Coming soon...</h4>
+            </div>
+            <a href="https://github.com/DivTheDev" title="Project Link" class="folio-item__project-link">View Project</a>
+            <div class="folio-item__caption"> 
+              <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end column -->
+      </div>
+      <!-- folio-list -->
+    </section>
+    <!-- end portfolio -->
+    <!-- footer
+      ================================================== -->
+    <footer class="s-footer h-dark-bg">
+      <div class="right-vert-line"></div>
+      <div class="row s-footer__main">
+        <div class="column large-6">
+          <div class="section-intro" data-aos="fade-up">
+            <h3 class="subhead">Get In Touch</h3>
+            <h1 class="display-1">
+              Have an idea or a concept that you would like to talk about?
+              Let's turn that idea into reality. Send me a message.
+            </h1>
+          </div>
+          <div class="footer-email-us">
+            <a href="mailto:hello@divyesh.com" class="btn btn--primary h-full-width">Let's Talk</a>
+          </div>
+          <p style="text-align:end; font-size: 10pt;">www.styleshout.com</p>
+        </div>
+        <div class="column large-5">
+          <div class="footer-contacts">
+            <div class="footer-contact-block" data-aos="fade-up">
+              <h5 class="footer-contact-block__header">
+                Email
+              </h5>
+              <p class="footer-contact-block__content">
+                <a href="mailto:hello@divyeshvala.com">hello@divyeshvala.com</a>
+              </p>
+            </div>
+            <!-- end footer-contact-block -->
+            <br>
+            <div class="footer-contact-block" data-aos="fade-up">
+              <h5 class="footer-contact-block__header">
+                Social
+              </h5>
+              <ul class="footer-contact-block__list">
+                <li><a href="https://www.linkedin.com/in/divyeshvala" target="_blank">Linkedin</a></li>
+                <li><a href="https://github.com/DivTheDev" target="_blank">Github</a></li>
+                <li><a href="https://twitter.com/divthedev" target="_blank">Twitter</a></li>
+              </ul>
+            </div>
+            <!-- end footer-contact-block -->
+          </div>
+        </div>
+      </div>
+      <!-- end s-footer__main -->
+      <div class="row s-footer__bottom">
+        <div class="ss-go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path d="M12 0l8 9h-6v15h-4v-15h-6z"/>
+            </svg>
+          </a>
+        </div>
+        <!-- end ss-go-top -->
+      </div>
+      <!-- end s-footer__bottom -->
+    </footer>
+    <!-- end s-footer -->
+    <!-- photoswipe background
+      ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+      <div class="pswp__bg"></div>
+      <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+              "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+              "Zoom in/out"></button>
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+            "Next (arrow right)"></button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end photoSwipe background -->
+    <!-- Java Script
+      ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-</body>
-
-</html>
+  </body>
